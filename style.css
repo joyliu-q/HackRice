@@ -6,17 +6,19 @@ body {
 #navbar {
     background-color: #C4C4C4;
     width: 100%;
-p
-}
-.footer {
-    background-color: #C4C4C4;
-}
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 0px 10px;
+}   
 .content {
     background-color: #E2E2E2;
+    min-height: calc(100vh - 70px);
 }
 .card {
     background-color: #ffffff;
     width: 33%;
+    height: 50%;
     padding: 15px;
     margin: 5px auto;
     border-radius: 15px;
@@ -30,4 +32,9 @@ p
 }
 #yes_button {
     background-color: #04B600;
+}
+.footer {
+    background-color: #C4C4C4;
+    height: 50px;
+    padding: 0px 10px;
 }
