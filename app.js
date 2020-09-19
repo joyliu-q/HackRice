@@ -32,7 +32,7 @@ Vue.component('card-overlay', {
     </div>
     `
 })
-vm = new Vue({ el: '#meme' })
+vm = new Vue({ el: '#overlay_container' })
 
 /**
 new Vue({
