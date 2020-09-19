@@ -41,12 +41,15 @@ body {
 }
 #overlay_box {
     z-index: 10;
-    width: 50vw;
-    height: 50vh;
+    width: 75vw;
+    height: calc(75vh - 50px);
     padding: 15px;
     margin: 5px auto;
     border-radius: 15px;
     background-color: #ffffff;
+    position: fixed;
+    top: 12.5%;
+    left: 12.5%;
 }
 .no_button {
     background-color: #D10000;
