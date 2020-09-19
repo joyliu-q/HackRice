@@ -57,12 +57,11 @@ body {
     border: 2px solid #4CAF50;
     color: #4CAF50;
     transition-duration: 0.4s;
-    position: fixed;
+    position: absolute;
     width: 10%;
     height: 10%;
     right: 5px;
     bottom: 5px;
-    position: absolute;
     border-radius: 15px;
 }
 .overlay_back_button:hover {
@@ -84,14 +83,18 @@ body {
     right: 0%;
 }
 .footer_button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
+    background-color: #000000; /* Green */
+    border: 2px solid #ffffff;
+    color: #ffffff;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
     margin: 4px 2px;
+    padding: 16px 32px;
+    transition-duration: 0.4s;
+}
+.footer_button:hover {
+    background-color: #ffffff; /* Green */
+    color: black;
 }
 body {
     background-color: #E2E2E2;
