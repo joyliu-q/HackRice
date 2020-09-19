@@ -39,10 +39,10 @@ body {
     margin: 5px auto;
     top: 90%
 }
-#overlay_container {
+#overlay_box {
     z-index: 10;
-    width: 75vw;
-    height: 75vh;
+    width: 50vw;
+    height: 50vh;
     padding: 15px;
     margin: 5px auto;
     border-radius: 15px;

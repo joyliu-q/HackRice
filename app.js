@@ -6,7 +6,7 @@ Vue.component('card-overlay', {
     },
     template: `
     <div>
-        <div class = "overlay_container" v-if="hidecards == false">
+        <div id = "overlay_box" v-if="hidecards == false">
             <h3>Detailed Explanation</h3>
             <p>
                 Wow more detailed explanation. Lorem ipsum dolor sit amet, 
