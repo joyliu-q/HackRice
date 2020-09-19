@@ -1,10 +1,13 @@
+import json from "./test.json";
+const myJSON = JSON.parse(json);
+
 Vue.component('card-overlay', {
     data: function () {
       return {
         hidecards: true,
         email_list_input: "",
         emails: [],
-
+        json: this.get_json(),
         // Later extract from JSON
         title: "Detailed Explanation",
         blurb: "Blurb summarizing what the issue is. Maybe add photo.",
@@ -22,6 +25,10 @@ Vue.component('card-overlay', {
         }
     },
     methods: {
+        get_json: function () {
+            this.json = require('data/info.json');
+            console.log(this.json);
+        },
         next_card: function () {
             this.title = "new title";
             this.explanation = "new explanation";
