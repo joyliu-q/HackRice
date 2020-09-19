@@ -3,8 +3,11 @@ Vue.component('card-overlay', {
       return {
         hidecards: true,
         email_list_input: "",
+        emails: [],
+
         // Later extract from JSON
         title: "Detailed Explanation",
+        blurb: "Blurb summarizing what the issue is. Maybe add photo.",
         explanation: "Wow more detailed explanation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl arcu, sit amet efficitur est pellentesque nec. Nam vehicula nisi risus, vel tempus quam vehicula a. Aenean a convallis orci. Quisque pharetra orci et elit aliquam commodo.\nProin viverra ante quis turpis malesuada, eu egestas diam sodales. Fusce maximus turpis vel sem egestas dignissim. Aenean mattis ligula mi, eu aliquam velit pulvinar mollis. Nulla placerat ultricies purus, sit amet  maximus nisl vehicula quis. Duis a scelerisque mauris, mattis gravida nisi. Nam sagittis id ipsum ut pretium. Phasellus in  sapien sollicitudin, vehicula metus sit amet, scelerisque ante.   Nulla luctus blandit porta.",
         links: [
             {
@@ -16,6 +19,24 @@ Vue.component('card-overlay', {
                 url: "https://www.unicef.org/"
             }
         ]
+
+        }
+    },
+    methods: {
+        next_card: function () {
+            this.title = "new title";
+            this.explanation = "new explanation";
+            this.blurb = "new blurb";
+            this.links = [
+                {
+                    title: "bruh moment",
+                    url: "https://www.google.com/"
+                },
+                {
+                    title: "UNICEF",
+                    url: "https://www.unicef.org/"
+                }
+            ]
         }
     },
     template: `
@@ -34,21 +55,23 @@ Vue.component('card-overlay', {
             <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
         </div>
         <div class = "card" v-if="hidecards == true">
-            <h2>Social Justice Issue Title</h2>
+            <h2>{{title}}</h2>
             <img src = "blah.png">
             <p>
-                Blurb summarizing what the issue is. Maybe add photo.
+                {{blurb}}
             </p>
             <div id = "button_container">
-                <button class="no_button">X</button>
-                <button class="yes_button" v-on:click="hidecards = false">Y</button>
+                <button class="no_button" @click = "next_card">X</button>
+                <button class="yes_button" @click = "hidecards = false">Y</button>
             </div>
         </div>
-        <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List For More Info!">
+        <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List!" @keyup.enter = "emails.push(email_list_input)">
     </div>
     `
 })
-vm = new Vue({ el: '#overlay_container' })
+new Vue({ 
+    el: '#overlay_container'
+})
 
 /**
 new Vue({
