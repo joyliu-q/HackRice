@@ -28,9 +28,7 @@ Vue.component('card-overlay', {
             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZMbzsJS6Lj0Fn1aFVybj3neSLNrY4Wmw1Pg&usqp=CAU">
             <ul>
                 <li v-for="link in links">
-                    {{link.title}} - 
-                    <a :href = "link.url">{{link.url}}</a> 
-                    div :id="val"
+                    <a :href = "link.url" target="_blank">{{link.title}}</a> 
                 </li>
             </ul>
             <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
