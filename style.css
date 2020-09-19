@@ -1,0 +1,26 @@
+body {
+    background-color: #E2E2E2;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #C4C4C4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.footer {
+    background-color: #C4C4C4;
+}
+.content {
+    background-color: #E2E2E2;
+}
+.card {
+    background-color: #ffffff;
+}
+#no_button {
+    background-color: #D10000;
+}
+#yes_button {
+    background-color: #04B600;
+}
