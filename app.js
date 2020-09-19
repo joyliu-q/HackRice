@@ -1,3 +1,4 @@
+
 Vue.component('card-overlay', {
     data: function () {
       return {
