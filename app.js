@@ -28,7 +28,7 @@ Vue.component('card-overlay', {
             <ul>
                 <li>Link</li>
             </ul>
-            <button v-on:click="hidecards = true">Back to Cards {{ hidecards }}</button>
+            <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
         </div>
         <div class = "card" v-if="hidecards == true">
             <h2>Social Justice Issue Title</h2>

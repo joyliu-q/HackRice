@@ -2,6 +2,7 @@ body {
     background-color: #E2E2E2;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #navbar {
     background-color: #C4C4C4;
@@ -50,6 +51,23 @@ body {
     position: fixed;
     top: 12.5%;
     left: 12.5%;
+}
+.overlay_back_button {
+    background-color: #ffffff; /* Green */
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    transition-duration: 0.4s;
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    right: 5px;
+    bottom: 5px;
+    position: absolute;
+    border-radius: 15px;
+}
+.overlay_back_button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
 .no_button {
     background-color: #D10000;
