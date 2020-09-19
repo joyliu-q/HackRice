@@ -5,7 +5,16 @@ Vue.component('card-overlay', {
         // Later extract from JSON
         title: "Detailed Explanation",
         explanation: "Wow more detailed explanation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl arcu, sit amet efficitur est pellentesque nec. Nam vehicula nisi risus, vel tempus quam vehicula a. Aenean a convallis orci. Quisque pharetra orci et elit aliquam commodo.\nProin viverra ante quis turpis malesuada, eu egestas diam sodales. Fusce maximus turpis vel sem egestas dignissim. Aenean mattis ligula mi, eu aliquam velit pulvinar mollis. Nulla placerat ultricies purus, sit amet  maximus nisl vehicula quis. Duis a scelerisque mauris, mattis gravida nisi. Nam sagittis id ipsum ut pretium. Phasellus in  sapien sollicitudin, vehicula metus sit amet, scelerisque ante.   Nulla luctus blandit porta.",
-        links: ["link1", "link2", "link3"]
+        links: [
+            {
+                title: "thirst project",
+                url: "thirstproject.org"
+            },
+            {
+                title: "UNICEF",
+                url: "unicef.org"
+            }
+        ]
       }
     },
     template: `
