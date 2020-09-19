@@ -19,7 +19,6 @@ Vue.component('card-overlay', {
                 url: "https://www.unicef.org/"
             }
         ]
-
         }
     },
     methods: {
@@ -56,7 +55,7 @@ Vue.component('card-overlay', {
         </div>
         <div class = "card" v-if="hidecards == true">
             <h2>{{title}}</h2>
-            <img src = "blah.png">
+            <img id = "card_img" src = "img1.png">
             <p>
                 {{blurb}}
             </p>
@@ -72,7 +71,6 @@ Vue.component('card-overlay', {
 new Vue({ 
     el: '#overlay_container'
 })
-
 /**
 new Vue({
     // lol change name later
