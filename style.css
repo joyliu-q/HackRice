@@ -6,6 +6,7 @@ body {
 #navbar {
     background-color: #C4C4C4;
     width: 100%;
+    height: 80px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -13,7 +14,10 @@ body {
 }   
 .content {
     background-color: #E2E2E2;
-    min-height: calc(100vh - 70px);
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    min-height: calc(100vh - 150px);
 }
 .card {
     background-color: #ffffff;
@@ -22,10 +26,18 @@ body {
     padding: 15px;
     margin: 5px auto;
     border-radius: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(-50% / 4);
+    margin-left: calc(-16.5%);
+
 }
 #button_container {
     width: 33%;
+    position: absolute;
     margin: 5px auto;
+    top: 90%
 }
 #no_button {
     background-color: #D10000;
@@ -35,6 +47,13 @@ body {
 }
 .footer {
     background-color: #C4C4C4;
-    height: 50px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: calc(100vh - 70px);
     padding: 0px 10px;
+}
+h2, .h2{
+    margin-top: 0;
+    margin-bottom: 0;
 }
