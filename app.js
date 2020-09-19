@@ -67,8 +67,8 @@ Vue.component('card-overlay', {
                 {{blurb}}
             </p>
             <div id = "button_container">
-                <button class="no_button" @click = "next_card">X</button>
-                <button class="yes_button" @click = "hidecards = false">Y</button>
+                <button class="no_button" @click = "next_card"></button>
+                <button class="yes_button" @click = "hidecards = false"></button>
             </div>
         </div>
         <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List!" @keyup.enter = "emails.push(email_list_input)">

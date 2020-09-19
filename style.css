@@ -57,11 +57,23 @@ body {
     margin: 5px 5px;
     border-radius: 5px;
 }
+.about_box {
+    background-color:  #E2E2E2;
+    color: #000000;
+    text-align: center;
+    width: 20%;
+    height: 60%;
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
 #button_container {
     width: 93%;
     position: absolute;
     margin: 5px auto;
-    top: 90%
+    top: 85%
 }
 #overlay_box {
     z-index: 10;
@@ -92,18 +104,30 @@ body {
     color: white;
 }
 .no_button {
-    background-color: #D10000;
-    width: 100px;
-    height:50px;
+    background-image: url("X.png");
+    border-radius: 50%;
     position: absolute;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    outline:none;
     left: 0%;
 }
+.no_button:hover {
+    filter: brightness(70%);
+}
 .yes_button {
-    background-color: #04B600;
-    width: 100px;
-    height:50px;
+    background-image: url("Y.png");
     position: absolute;
+    border-radius: 50%;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    outline:none;
     right: 0%;
+}
+.yes_button:hover {
+    filter: brightness(70%);
 }
 .footer_button {
     background-color: #000000; /* Green */
