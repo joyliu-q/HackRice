@@ -24,7 +24,7 @@ Vue.component('faq', {
     </div>
     `
 })
-vm = new Vue({ el: '#about_container' })
+vm = new Vue({ el: '#faq_container' })
 
 /**
 new Vue({
