@@ -1,7 +1,7 @@
 Vue.component('card-overlay', {
     data: function () {
       return {
-        hidecards: false
+        hidecards: true
       }
     },
     template: `
@@ -38,7 +38,7 @@ Vue.component('card-overlay', {
             </p>
             <div id = "button_container">
                 <button class="no_button">X</button>
-                <button class="yes_button">Y</button>
+                <button class="yes_button" v-on:click="hidecards = false">Y</button>
             </div>
         </div>
     </div>
