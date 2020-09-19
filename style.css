@@ -3,11 +3,10 @@ body {
     margin: 0;
     padding: 0;
 }
-.navbar {
+#navbar {
     background-color: #C4C4C4;
-    margin: 0;
-    padding: 0;
     width: 100%;
+p
 }
 .footer {
     background-color: #C4C4C4;
@@ -17,6 +16,14 @@ body {
 }
 .card {
     background-color: #ffffff;
+    width: 33%;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 15px;
+}
+#button_container {
+    width: 33%;
+    margin: 5px auto;
 }
 #no_button {
     background-color: #D10000;
