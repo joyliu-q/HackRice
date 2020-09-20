@@ -129,7 +129,7 @@ Vue.component('card-overlay', {
             blurb: data[0]['blurb'],
             description: data[0]['description'],
             links: data[0]['links'],
-            img: data[0]['img']
+            img: data[0]['img'],
         }
     },
     methods: {
