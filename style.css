@@ -134,6 +134,25 @@ body {
     background-color:white; /* Green */
     color:#b64029;
 }
+li{
+    list-style-type: none;
+    margin: 10px;
+}
+li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    color:black;
+}
+li a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+p {
+    font-size: 20px;
+    font-family: Arial;
+    color:#383838;
+}
 .learn_more_button {
     background-color: #F1BC00;
     border-radius: 50px;
@@ -214,7 +233,7 @@ img:hover {
 }
 .v3 {
     font-size: 24.5px;
-    color: #bbbbbb;
+    color:#143656;
     padding: 15px;
     margin-top: 5px;
     margin-bottom: 5px;
