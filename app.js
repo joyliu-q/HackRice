@@ -160,16 +160,25 @@ Vue.component('card-overlay', {
             </ul>
             <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
         </div>
-        <div class = "card" v-if="hidecards == true">
-            <h2>{{title}}</h2>
-            <img :src = "img" class = "card_img">
-            <p>
-                {{blurb}}
-            </p>
-            <div id = "button_container">
-                <button class="no_button" @click = "next_card"></button>
-                <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
-                <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>
+        <div class = "content_main" v-if="hidecards == true">
+            <div class = "card">
+                <h2>{{title}}</h2>
+                <img :src = "img" class = "card_img">
+                <p>
+                    {{blurb}}
+                </p>
+                <div id = "button_container">
+                    <button class="no_button" @click = "next_card"></button>
+                    <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
+                    <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>    
+                </div>
+            </div>
+            <div class = "card_right">
+                <h2>{{title}}</h2>
+                <img :src = "img" class = "card_img">
+                <p>
+                    {{blurb}}
+                </p>
             </div>
         </div>
         <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List!" @keyup.enter = "emails.push(email_list_input)">
