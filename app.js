@@ -168,7 +168,7 @@ Vue.component('card-overlay', {
             </p>
             <div id = "button_container">
                 <button class="no_button" @click = "next_card"></button>
-                <button class="learn_more_button" @click = "hidecards = false"></button>
+                <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
                 <button class="yes_button" @click = "next_card"></button>
             </div>
         </div>
