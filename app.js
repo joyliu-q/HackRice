@@ -119,30 +119,29 @@ const data = [
 
 Vue.component('card-overlay', {
     data: function () {
-      return {
-        hidecards: true,
-        email_list_input: "",
-        emails: [],
-        current_index: 0,
-        title: data[0]['title'],
-        blurb: data[0]['blurb'],
-        description: data[0]['description'],
-        links: data[0]['links'],
-        img: data[0]['img']
+        return {
+            json: data,
+            hidecards: true,
+            current_index: 0,
+            title: data[0]['title'],
+            blurb: data[0]['blurb'],
+            description: data[0]['description'],
+            links: data[0]['links'],
+            img: data[0]['img']
         }
     },
     methods: {
         next_card: function () {
-            if (this.current_index < data.length - 1) {
+            if (this.current_index < this.json.length - 1) {
                 this.current_index ++;
             } else {
                 this.current_index = 0;
             }
-            this.title = data[this.current_index]['title'];
-            this.blurb = data[this.current_index]['blurb'];
-            this.description = data[this.current_index]['description'];
-            this.links = data[this.current_index]['links'];
-            this.img = data[this.current_index]['img'];
+            this.title = this.json[this.current_index]['title'];
+            this.blurb = this.json[this.current_index]['blurb'];
+            this.description = this.json[this.current_index]['description'];
+            this.links = this.json[this.current_index]['links'];
+            this.img = this.json[this.current_index]['img'];
         }
     },
     template: `
@@ -161,6 +160,7 @@ Vue.component('card-overlay', {
             <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
         </div>
         <div class = "content_main" v-if="hidecards == true">
+        <!-- Main card -->
             <div class = "card" style = "position: fixed;">
                 <h2>{{title}}</h2>
                 <p>
@@ -173,22 +173,23 @@ Vue.component('card-overlay', {
                     <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>    
                 </div>
             </div>
-            <div class = "card" style = "float: right; margin-top: 9%;  filter: blur(8px); -webkit-filter: blur(8px);">
-                <h2>{{title}}</h2>
+            <!-- Right card -->
+            <div class = "card" v-if = "this.current_index != this.json.length - 1" style = "float: right; margin-top: 9%;  filter: blur(8px); -webkit-filter: blur(8px);">
+                <h2>{{this.json[this.current_index + 1]["title"]}}</h2>
                 <p>
-                    {{blurb}}
+                    {{this.json[this.current_index + 1]["blurb"]}}
                 </p>
                 <img :src = "img" class = "card_img">
             </div>
-            <div class = "card" style = "float: left; margin-top: 9%; margin-left: 10%;  filter: blur(8px); -webkit-filter: blur(8px);">
-                <h2>{{title}}</h2>
+            <!-- Left card -->
+            <div class = "card" v-if = "this.current_index != 0" style = "float: left; margin-top: 9%; margin-left: 10%;  filter: blur(8px); -webkit-filter: blur(8px);">
+                <h2>{{this.json[this.current_index]["title"]}}</h2>
                 <p>
-                    {{blurb}}
+                    {{this.json[this.current_index - 1]["blurb"]}}
                 </p>
                 <img :src = "img" class = "card_img">
             </div>
         </div>
-        <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List!" @keyup.enter = "emails.push(email_list_input)">
     </div>
     `
 })
