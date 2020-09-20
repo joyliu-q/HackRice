@@ -127,6 +127,21 @@ body {
 .no_button:hover {
     filter: brightness(70%);
 }
+.end_button {
+    background-color: #b64029; /* Green */
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    left: 100px;
+    margin: 4px 2px;
+    padding: 16px 32px;
+    transition-duration: 0.4s;
+}
+.end_button:hover {
+    background-color:white; /* Green */
+    color:#b64029;
+}
 .learn_more_button {
     background-color: #F1BC00;
     border-radius: 50px;
