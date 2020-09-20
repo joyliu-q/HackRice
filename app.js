@@ -162,9 +162,9 @@ Vue.component('card-overlay', {
         <div class = "content_main" v-if="hidecards == true">
         <!-- Main card -->
             <div class = "card" style = "position: fixed;">
-                <h2>{{title}}</h2>
+                <h2>{{this.json[this.current_index]["title"]}}</h2>
                 <p>
-                    {{blurb}}
+                    {{this.json[this.current_index]["blurb"]}}
                 </p>
                 <img :src = "img" class = "card_img">
                 <div id = "button_container">
