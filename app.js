@@ -163,10 +163,10 @@ Vue.component('card-overlay', {
         <div class = "content_main" v-if="hidecards == true">
             <div class = "card">
                 <h2>{{title}}</h2>
-                <img :src = "img" class = "card_img">
                 <p>
                     {{blurb}}
                 </p>
+                <img :src = "img" class = "card_img">
                 <div id = "button_container">
                     <button class="no_button" @click = "next_card"></button>
                     <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
