@@ -25,17 +25,15 @@ body {
     min-height: calc(100vh - 150px);
     text-align: center;
 }
-<<<<<<< HEAD
 .content_faq{
     background-color: #E2E2E2;
     position: fixed;
     top: 80px;
     width: 100%;
     text-align: center;
-=======
+}
 .card_part {
     margin-top: 9%;
->>>>>>> 415f7bdd102204780e73066fe65fd7d1b0f6bd76
 }
 .card {
     background-color: #ffffff;
@@ -242,7 +240,7 @@ img:hover {
 }
 .v2 {
     font-size: 3em;
-    color: #000000;
+    color: #ffffff;
     padding: 25px;
     margin-top: 0px;
     margin-bottom: 5px;
