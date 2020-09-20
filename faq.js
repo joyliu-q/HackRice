@@ -8,7 +8,7 @@ Vue.component('faq', {
     <div>
         <div class = "content_faq">
             <div class = "about_header">
-                <h1 class="v2">FAQs:</h1>
+                <h1 class="v2">FAQ</h1>
             </div>
             <div class = "faq_box">
                 <h4>How do you recommend users about social issues?</h4>
@@ -23,11 +23,11 @@ Vue.component('faq', {
                 <h5>We will have a committee to approve every single new card submissions from organizations. We will also check the organization’s previous records to ensure they are using our website appropriately.</h5>
             </div>
             <div class = "faq_box">
-                <h4>How do you use Involvopedia?</h4>
+                <h4>How do you use Involvepedia?</h4>
                 <h5>Involvopedia is a platform that educates its users about important social issues. The interested and not interested buttons below every social issue allow us to identify the types of social issues you’re interested in, so that we can improve your experience by not showing you issues that you do not want to learn further about. </h5>
             </div>
             <div class = "faq_box">
-                <h4>Why should I use Involvopedia?</h4>
+                <h4>Why should I use Involvepedia?</h4>
                 <h5>Most people are unaware of a lot of social issues, and that’s perfectly OK! The best way to become a more active member of your community is to learn about the issues facing your peers, and a great way to do that is Involvopedia, which will allow you to learn about issues facing your hometown, your country, or the entire world. You can also learn about issues that don’t directly affect you or your local community, but still affect a lot of people around the world. </h5>
             </div>
             <div class = "faq_box">

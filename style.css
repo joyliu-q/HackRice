@@ -76,9 +76,11 @@ body {
 }
 .pic_box {
     background-image: url("hands-2082x1171.jpg");
+    background-repeat: repeat-x;
     width: 100%;
     background-size: 800px;
     height:800px;
+    background-color: #ffffff;
 }
 #button_container {
     width: 93%;
@@ -266,6 +268,7 @@ h4 {
 h5 {
     font-size:15px;
     font-family:Arial;
+    font-weight: normal;
 }
 .card_img {
     width: auto;

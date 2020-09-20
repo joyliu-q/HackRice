@@ -38,11 +38,11 @@ const data = [
         "interest": false
     },
     {
-        "title": "Small Business",
+        "title": "Support Houston Local Businesses",
         "tags": ["local tag", "Houston"],
         "blurb": "COVID-19 has drastically affected Houston’s small businesses, the backbone of its economy. Your support of local businesses could be the difference between them staying open and shutting down.",
         "description": "When COVID-19 hit, economies worldwide screeched to a halt. Many stores were forced to close or go completely online, and their revenues fell. Small businesses often have extremely thin profit margins and low reserves of cash, making them ill-equipped to survive in these times. Many were forced to lay off employees, while others shut down all-together.\nAs a consumer, the best way to support your local small businesses is simple: buy local. While their prices may be slightly higher as they can’t compete with huge chains, your patronage is a huge factor in them staying afloat. The next time you go out to eat, or need to buy groceries, considering giving your business to a local small business instead. If you are a small business owner, there are several organizations designed to help you stay afloat in these times, which you may find below.",
-        "img": "https://s17026.pcdn.co/wp-content/uploads/sites/9/2016/06/1-3505.jpg",
+        "img": "https://assets.entrepreneur.com/content/3x2/2000/20200414070728-cb.jpeg?width=700&crop=2:1",
         "links": [
             {
                 "link_title": "SCORE Houston",
@@ -86,7 +86,7 @@ const data = [
         "tags": ["national tag", "America"],
         "blurb": "Black Lives Matter is an American movement protesting against racial inequality and police brutality. African Americans face disproportional violence at the hands of police officers, and the movement’s goal is to bring notice to this and other forms of systematic discrimination.",
         "description": "While slavery ended in the mid 1800s in the US, African Americans have faced systemic discrimination that has lasted well beyond the ending of slavery - redlining, being kept out of higher education, harsher prison sentences, Jim Crow laws, and police brutality. The rate of police violence against African Americans is disproportionally high, and the Black Lives Matter movement began to gain traction after multiple unarmed African Americans were shot dead. It aims to bring notice to this violence, invest in the Black community, and lower rates of police violence.\nThe biggest way in which you can help Black Lives Matter is to listen - listen to protesters and understand the issues that they are protesting. You can support minority-owned businesses, help families who have lost loved ones to police brutality, and volunteer with organizations that aim to reduce systemic discrimination.",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQzLqdik_aZoVxwIjBSX0ZLaa-aVIbUfrnYw&usqp=CAU",
+        "img": "https://www.nelsonmandela.org/uploads/_imager/uploads/files/160517/Black-Lives-Matter-2_W1024_H341_upscale_CZ1_I1_Q80_P50-50.jpg",
         "links": [
             {
                 "link_title": "Equal Justice Initiative",
@@ -102,9 +102,9 @@ const data = [
     {
         "title": "Access and Equality in Healthcare",
         "tags": ["national tag", "America", "international tag"],
-        "blurb": "Unlike the vast majority of developed countries, the United States does not have a universal healthcare system. This leads to healthcare being unreasonably expensive - causing many to accrue medical debt that they cannot pay, and others not getting treatment even when they need it because they cannot afford it.",
+        "blurb": "Unlike the vast majority of developed countries, the United States does not have a universal healthcare system. This leads to healthcare being unreasonably expensive, causing many to accrue medical debt and others going without neccessary treatment due to inaffordability.",
         "description": "The lack of universal healthcare causes many problems in the US. Average life expectancy lags behind other developed countries, and the rates of obesity, heart disease, and infant mortality, among others, are all extremely high in the US compared to its counterparts. The American healthcare system does not even save money - as American taxpayers pay more for their healthcare than do taxpayers in countries with universal healthcare. The large fees associated with American healthcare leaves many unable or unwilling to get necessary medical treatment.\nUnfortunately, there is nothing that can be directly done as an American about that problem, but you can vote and campaign for candidates who back Universal Healthcare. You can also donate to advocacy groups that raise awareness and campaign for healthcare reform in America.",
-        "img": "https://www.theatlas.com/i/atlas_Sy7-xBn4Z.png",
+        "img": "https://www.healthcareitnews.com/sites/hitn/files/TEKsystems-Blog-Image-1200x672.jpg",
         "links": [
             {
                 "link_title": "Universal Health Care Action Network",
