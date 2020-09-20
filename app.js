@@ -173,14 +173,14 @@ Vue.component('card-overlay', {
                     <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>    
                 </div>
             </div>
-            <div class = "card" style = "float: right; z-index: 2; margin-top: 9%; position: stasis;">
+            <div class = "card" style = "float: right; margin-top: 9%;  filter: blur(8px); -webkit-filter: blur(8px);">
                 <h2>{{title}}</h2>
                 <img :src = "img" class = "card_img">
                 <p>
                     {{blurb}}
                 </p>
             </div>
-            <div class = "card" style = "float: left; z-index: 2; margin-top: 9%; margin-left: 10%; position: stasis;">
+            <div class = "card" style = "float: left; margin-top: 9%; margin-left: 10%;  filter: blur(8px); -webkit-filter: blur(8px);">
                 <h2>{{title}}</h2>
                 <img :src = "img" class = "card_img">
                 <p>
