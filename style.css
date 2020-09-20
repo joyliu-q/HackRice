@@ -11,7 +11,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    padding: 0px 10px;
+    padding: 7.5px 10px;
 }   
 .content_main {
     background-color: #E2E2E2;
@@ -25,12 +25,17 @@ body {
     min-height: calc(100vh - 150px);
     text-align: center;
 }
+<<<<<<< HEAD
 .content_faq{
     background-color: #E2E2E2;
     position: fixed;
     top: 80px;
     width: 100%;
     text-align: center;
+=======
+.card_part {
+    margin-top: 9%;
+>>>>>>> 415f7bdd102204780e73066fe65fd7d1b0f6bd76
 }
 .card {
     background-color: #ffffff;
@@ -38,7 +43,7 @@ body {
     padding: 15px;
     margin: 5px auto;
     border-radius: 15px;
-    top: 50%;
+    top: 45%;
     left: 50%;
     margin-top: calc(-50% / 4);
     margin-left: calc(-16.5%);
@@ -125,7 +130,7 @@ body {
     filter: brightness(70%);
 }
 .end_button {
-    background-color: #b64029; /* Green */
+    background-color: #D10000; /* Green */
     border: 2px solid #ffffff;
     color: #ffffff;
     text-align: center;
@@ -135,6 +140,7 @@ body {
     transition-duration: 0.4s;
     float: right;
     position: relative;
+    z-index: 10;
 }
 .end_button:hover {
     background-color:white; /* Green */
@@ -224,6 +230,10 @@ img:hover {
     top: calc(100vh - 70px);
     padding: 0px 10px;
 }
+.footer:hover {
+    background-color: rgba(0,0,0,0.5);
+    transition-duration: 0.4s;
+}
 .v1 {
     font-size: 3em;
     color: #ffffff;
@@ -232,7 +242,7 @@ img:hover {
 }
 .v2 {
     font-size: 3em;
-    color: #ffffff;
+    color: #000000;
     padding: 25px;
     margin-top: 0px;
     margin-bottom: 5px;

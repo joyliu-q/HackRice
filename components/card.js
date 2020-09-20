@@ -134,7 +134,7 @@ Vue.component('card-display', {
     },
     template: `
     <div>
-        <div class = "card"style = "float: left; margin-top: 9%; margin-left: 10%;">
+        <div class = "card" style = "float: left; margin-top: 9%; margin-left: 10%;">
             <h2>{{title}}</h2>
             <p>
                 {{blurb}}
