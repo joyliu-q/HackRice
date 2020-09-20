@@ -218,6 +218,10 @@ img:hover {
     top: calc(100vh - 70px);
     padding: 0px 10px;
 }
+.footer:hover {
+    opacity: 0;
+    transition-duration: 0.4s;
+}
 .v1 {
     font-size: 3em;
     color: #ffffff;
@@ -226,7 +230,7 @@ img:hover {
 }
 .v2 {
     font-size: 3em;
-    color: #ffffff;
+    color: #000000;
     padding: 25px;
     margin-top: 0px;
     margin-bottom: 5px;
