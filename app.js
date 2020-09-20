@@ -178,7 +178,7 @@ Vue.component('card-overlay', {
                 </div>
             </div>
             <!-- Right card -->
-            <div class = "card" v-if = "this.current_index != this.json.length - 1" style = "float: right; margin-top: 9%;  filter: blur(8px); -webkit-filter: blur(8px);">
+            <div class = "card" v-if = "this.current_index != this.json.length - 1" style = "float: right; margin-top: 9%; margin-right: 10%;  filter: blur(8px); -webkit-filter: blur(8px);">
                 <h2>{{this.json[this.current_index + 1]["title"]}}</h2>
                 <p>
                     {{this.json[this.current_index + 1]["blurb"]}}
