@@ -118,38 +118,26 @@ const data = [
 ]
 
 Vue.component('card-display', {
+    props: {
+        index: Number,
+    },
     data: function () {
         return {
             json: data,
             hidecards: true,
-            current_index: 0,
-            title: data[0]['title'],
-            blurb: data[0]['blurb'],
-            description: data[0]['description'],
-            links: data[0]['links'],
-            img: data[0]['img']
-        }
-    },
-    methods: {
-        next_card: function () {
-            if (this.current_index < this.json.length - 1) {
-                this.current_index ++;
-            } else {
-                this.current_index = 0;
-            }
-            this.title = this.json[this.current_index]['title'];
-            this.blurb = this.json[this.current_index]['blurb'];
-            this.description = this.json[this.current_index]['description'];
-            this.links = this.json[this.current_index]['links'];
-            this.img = this.json[this.current_index]['img'];
+            title: data[this.index]['title'],
+            blurb: data[this.index]['blurb'],
+            description: data[this.index]['description'],
+            links: data[this.index]['links'],
+            img: data[this.index]['img']
         }
     },
     template: `
     <div>
         <div class = "card"style = "float: left; margin-top: 9%; margin-left: 10%;">
-            <h2>{{this.json[this.current_index + 1]["title"]}}</h2>
+            <h2>{{title}}</h2>
             <p>
-                {{this.json[this.current_index + 1]["blurb"]}}
+                {{blurb}}
             </p>
             <img :src = "img" class = "card_img">
         </div>
