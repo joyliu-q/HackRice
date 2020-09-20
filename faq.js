@@ -7,7 +7,7 @@ Vue.component('faq', {
     template: `
     <div>
         <div class = "content">
-            <h1>FAQ:</h1>
+            <h1 class="v2">FAQs:</h1>
             <div class = "faq_box">
                 <h2>"How do you recommend users about social issues?"</h2>
                 <p>"We will add a feature to allow members to create an account and select areas and topics they may be interested in, and use these data to recommend our users social issues."</p>

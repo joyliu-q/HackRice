@@ -116,6 +116,19 @@ body {
 .no_button:hover {
     filter: brightness(70%);
 }
+.learn_more_button {
+    background-image: url("X.png");
+    border-radius: 50%;
+    position: absolute;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    outline:none;
+    margin: auto 25%;
+}
+.learn_more_button:hover {
+    filter: brightness(70%);
+}
 .yes_button {
     background-image: url("Y.png");
     position: absolute;
@@ -180,7 +193,7 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
-#card_img {
+.card_img {
     max-width: 100%;
     height: auto;
     max-height: 75%;
