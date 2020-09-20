@@ -34,7 +34,6 @@ new Vue({
     },
     methods: {
         greet: function() {
-
             this.greeting = "Hi, "
             this.greeting = this.greeting.concat(this.username, "!")
             
