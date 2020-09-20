@@ -142,6 +142,8 @@ Vue.component('card-overlay', {
             this.description = this.json[this.current_index]['description'];
             this.links = this.json[this.current_index]['links'];
             this.img = this.json[this.current_index]['img'];
+            this.img2 = this.json[this.current_index+1]['img'];
+            this.img3 = this.json[this.current_index-1]['img'];
         }
     },
     template: `
@@ -179,7 +181,7 @@ Vue.component('card-overlay', {
                 <p>
                     {{this.json[this.current_index + 1]["blurb"]}}
                 </p>
-                <img :src = "img" class = "card_img">
+                <img :src = "img2" class = "card_img">
             </div>
             <!-- Left card -->
             <div class = "card" v-if = "this.current_index != 0" style = "float: left; margin-top: 9%; margin-left: 10%;  filter: blur(8px); -webkit-filter: blur(8px);">
@@ -187,7 +189,7 @@ Vue.component('card-overlay', {
                 <p>
                     {{this.json[this.current_index - 1]["blurb"]}}
                 </p>
-                <img :src = "img" class = "card_img">
+                <img :src = "img3" class = "card_img">
             </div>
         </div>
     </div>
