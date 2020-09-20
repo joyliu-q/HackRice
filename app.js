@@ -15,7 +15,7 @@ const data = [
                 "link_url": "https://www.rescue.org/"
             }
         ],
-        "views": 0
+        "interest": false
     },
     {
         "title": "Gentrification",
@@ -33,7 +33,7 @@ const data = [
                 "link_url": "https://ccppi.org/site/index.php/initiatives/initiatives-2"
             }
         ],
-        "views": 0
+        "interest": false
     },
     {
         "title": "Small Business",
@@ -55,7 +55,7 @@ const data = [
                 "link_url": "http://www.wbea-texas.org/womens-business-center"
             }
         ],
-        "views": 0
+        "interest": false
     },
     {
         "title": "DACA",
@@ -77,7 +77,7 @@ const data = [
                 "link_url": "https://www.ilrc.org/"
             }
         ],
-        "views": 0
+        "interest": false
     },
     {
         "title": "Black Lives Matter",
@@ -95,7 +95,7 @@ const data = [
                 "link_url": "https://blacklivesmatter.com"
             }
         ],
-        "views": 0
+        "interest": false
     },
     {
         "title": "Access and Equality in Healthcare",
@@ -113,7 +113,7 @@ const data = [
                 "link_url": "https://www.healthcare-now.org/"
             }
         ],
-        "views": 0
+        "interest": false
     },
 ]
 
@@ -169,7 +169,7 @@ Vue.component('card-overlay', {
             <div id = "button_container">
                 <button class="no_button" @click = "next_card"></button>
                 <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
-                <button class="yes_button" @click = "next_card"></button>
+                <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>
             </div>
         </div>
         <input v-model = "email_list_input" type = "text" placeholder = "Join Our Email List!" @keyup.enter = "emails.push(email_list_input)">
