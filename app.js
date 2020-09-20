@@ -161,7 +161,7 @@ Vue.component('card-overlay', {
             <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
         </div>
         <div class = "content_main" v-if="hidecards == true">
-            <div class = "card">
+            <div class = "card" style = "position: fixed;">
                 <h2>{{title}}</h2>
                 <p>
                     {{blurb}}
@@ -173,7 +173,14 @@ Vue.component('card-overlay', {
                     <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>    
                 </div>
             </div>
-            <div class = "card_right">
+            <div class = "card" style = "float: right; z-index: 2; margin-top: 9%; position: stasis;">
+                <h2>{{title}}</h2>
+                <img :src = "img" class = "card_img">
+                <p>
+                    {{blurb}}
+                </p>
+            </div>
+            <div class = "card" style = "float: left; z-index: 2; margin-top: 9%; margin-left: 10%; position: stasis;">
                 <h2>{{title}}</h2>
                 <img :src = "img" class = "card_img">
                 <p>
