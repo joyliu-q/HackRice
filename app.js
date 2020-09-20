@@ -1,3 +1,5 @@
+var chosen = [];
+
 const data = [
     {
         "title": "Asylum-seeking Refugees",
@@ -159,7 +161,7 @@ Vue.component('card-overlay', {
                     <a :href = "link.link_url" target="_blank">{{link.link_title}}</a> 
                 </li>
             </ul>
-            <button class = "overlay_back_button" v-on:click="hidecards = true">Back to Cards</button>
+            <button class = "overlay_back_button" @click="hidecards = true">Back to Cards</button>
         </div>
         <div class = "content_main" v-if="hidecards == true">
         <!-- Main card -->
@@ -172,7 +174,7 @@ Vue.component('card-overlay', {
                 <div id = "button_container">
                     <button class="no_button" @click = "next_card"></button>
                     <button class="learn_more_button" @click = "hidecards = false">LEARN MORE</button>
-                    <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true"></button>    
+                    <button class="yes_button" @click = "next_card" @click = "data[this.current_index]['interest'] = true" @click = "chosen.push(this.current_index)"></button>    
                 </div>
             </div>
             <!-- Right card -->
@@ -198,21 +200,3 @@ Vue.component('card-overlay', {
 new Vue({ 
     el: '#overlay_container'
 })
-/**
-new Vue({
-    // lol change name later
-    el:'#hackrice_project',
-    data: {
-        username: '',
-        greeting: ''
-    },
-    methods: {
-        greet: function() {
-
-            this.greeting = "Hi, "
-            this.greeting = this.greeting.concat(this.username, "!")
-            
-        }
-    }
-});
-*/

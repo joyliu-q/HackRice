@@ -159,21 +159,3 @@ Vue.component('card-display', {
 new Vue({ 
     el: '#card_part'
 })
-/**
-new Vue({
-    // lol change name later
-    el:'#hackrice_project',
-    data: {
-        username: '',
-        greeting: ''
-    },
-    methods: {
-        greet: function() {
-
-            this.greeting = "Hi, "
-            this.greeting = this.greeting.concat(this.username, "!")
-            
-        }
-    }
-});
-*/
