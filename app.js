@@ -157,7 +157,7 @@ Vue.component('card-overlay', {
             </p>
             <img :src = "img" class = "card_img">
             <ul>
-                <h3>Want to get involved? Start here:</h3>
+                <h3>Want to get involved? Get started with those websites:</h3>
                 <li v-for="link in links">
                     <a :href = "link.link_url" target="_blank">{{link.link_title}}</a> 
                 </li>

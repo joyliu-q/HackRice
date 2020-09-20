@@ -25,6 +25,13 @@ body {
     min-height: calc(100vh - 150px);
     text-align: center;
 }
+.content_faq{
+    background-color: #E2E2E2;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+}
 .card {
     background-color: #ffffff;
     width: 33%;
@@ -41,12 +48,11 @@ body {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
-    width: 15%;
-    height: 60%;
+    width: 14%;
     display: inline-block;
     vertical-align: text-top;
     padding: 10px;
-    margin: 5px 5px;
+    margin: 5px 3px;
     border-radius: 5px;
 }
 .about_header {
@@ -142,7 +148,7 @@ li a{
     font-size: 20px;
     text-decoration: none;
     font-family: Arial;
-    color:black;
+    color:blue;
 }
 li a:hover{
     color:blue;
@@ -245,6 +251,13 @@ h2 {
 h3 {
     margin-top: 0;
     margin-bottom: 0;
+}
+h4 {
+    font-size:20px;
+}
+h5 {
+    font-size:15px;
+    font-family:Arial;
 }
 .card_img {
     width: auto;
