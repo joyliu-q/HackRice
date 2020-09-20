@@ -155,14 +155,14 @@ Vue.component('card-overlay', {
             <p>
                 {{ description }}
             </p>
-            <img :src = "img" class = "card_img">
+            <img :src = "img" class = "desc_img">
             <ul>
                 <h3>Want to get involved? Get started with those websites:</h3>
                 <li v-for="link in links">
                     <a :href = "link.link_url" target="_blank">{{link.link_title}}</a> 
                 </li>
             </ul>
-            <button class = "overlay_back_button" @click="hidecards = true">Back to Cards</button>
+            <button class = "overlay_back_button" @click="hidecards = true">Back</button>
         </div>
         <div class = "content_main" v-if="hidecards == true">
         <!-- Main card -->

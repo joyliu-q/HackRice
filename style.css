@@ -92,7 +92,8 @@ body {
     z-index: 10;
     width: 75vw;
     height: calc(75vh - 50px);
-    padding: 15px;
+    padding: 25px;
+    padding-bottom: 0;
     margin: 5px auto;
     border-radius: 15px;
     background-color: #ffffff;
@@ -106,11 +107,12 @@ body {
     color: #4CAF50;
     transition-duration: 0.4s;
     position: absolute;
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
     right: 5px;
     bottom: 5px;
     border-radius: 15px;
+    font-size: 2em;
 }
 .overlay_back_button:hover {
     background-color: #4CAF50; /* Green */
@@ -269,6 +271,11 @@ h5 {
     font-size:15px;
     font-family:Arial;
     font-weight: normal;
+}
+.desc_img {
+    width: auto;
+    height: 50%;
+    padding-right: 15px;
 }
 .card_img {
     width: auto;
