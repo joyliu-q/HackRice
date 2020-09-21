@@ -272,6 +272,10 @@ h5 {
     font-family:Arial;
     font-weight: normal;
 }
+summary {
+    font-size: 20px;
+    font-weight: bold;
+}
 .desc_img {
     width: auto;
     height: 50%;
