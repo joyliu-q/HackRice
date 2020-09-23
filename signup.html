@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="authentication.js"></script>
+</head>
+<body>
+    <!--<div id = "navbar">
+        <h1 class="v1">INVOLVEPEDIA</h1>
+    </div>-->
+    <div id = "validation">
+        <h2>Sign Up Below</h2> <br>
+        <form id="form" onsubmit="return checkdata()">
+            <fieldset>
+                <legend>Your Information:</legend>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password">
+            </fieldset>
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer class="footer">
+        <a href = "index.html"><button class="footer_button">HOME</button></a>
+        <a href = "faq.html"><button class="footer_button">FAQ</button></a>
+    </footer>
+</body>
+</html>

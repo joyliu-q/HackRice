@@ -15,11 +15,7 @@
         <!--Right now you can display a card of a certain index using the index parameter-->
         <!--We may want to use a loop to display all of the cards we selected-->
         <!--Maybe through JS?-->
-        <card-display v-bind:index="1"></card-display>
-        <card-display v-bind:index="2"></card-display>
-        <card-display v-bind:index="3"></card-display>
-        <card-display v-bind:index="0"></card-display>
-        <card-display v-bind:index="5"></card-display>
+        <card-display v-for = "i in [1,2,3,0,5]" v-bind:index="i"></card-display>
     </div>
     <footer class="footer">
         <a href = "index.html"><button class="footer_button">HOME</button></a>
