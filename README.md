@@ -4,7 +4,7 @@ Involvepedia is an activism-based Quizlet/Tinder hybrid, with the mission of edu
 
 ## Installation
 
-You can test out the website by downloading Involvepedia and opening the index.html page.
+While not deployed, you can test out the website by downloading Involvepedia and opening the index.html page.
 
 ## Contributors
 - Qijia "Joy" Liu
